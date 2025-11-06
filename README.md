@@ -30,28 +30,37 @@ VS Code → File → Open Folder…
 Option B: If using Git clone
 
 git clone https://github.com/username/repository-name.git
+
 cd repository-name
 code .
+
 ✅ STEP 2: Set Up Virtual Environment
 
 This keeps your project dependencies isolated.
 
 # Create virtual environment (in project folder)
 python -m venv venv
+
 # Activate it:
+
 # On Windows:
+
 venv\Scripts\activate
 
 # On macOS/Linux:
+
 source venv/bin/activate
+
 ✅ STEP 3: Install Requirements
 
 Most Django projects have a requirements.txt file. Install the packages:
 
 pip install -r requirements.txt
+
 If requirements.txt is missing, you can manually install Django:
 
 pip install django
+
 ✅ STEP 4: Configure .env or Settings (If Required)
 
 Some projects require .env files (for secret keys or DB settings).
@@ -61,10 +70,13 @@ Check the README or .env.example if present, and create your own .env.
 ✅ STEP 5: Run Migrations
 
 python manage.py makemigrations
+
 python manage.py migrate
+
 ✅ STEP 6: Create Superuser (for Admin Login)
 
 python manage.py createsuperuser
+
 Follow the prompts.
 
 ✅ STEP 7: Run the Django Development Server
